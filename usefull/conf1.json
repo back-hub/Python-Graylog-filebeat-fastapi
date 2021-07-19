@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "disable_existing_loggers": "False",
+    "formatters": {
+        "default": {
+            "format": "%(asctime)s | %(name)s | %(levelname)s | %(message)s"
+        },
+        "access": {
+            "format": "%(asctime)s | %(name)s | %(levelname)s | %(message)s"
+        }
+    },
+    "handlers": {
+        "default": {
+            "formatter": "default",
+            "class": "logging.FileHandler",
+            "filename": "log2.log"
+        },
+        "gelf": {
+            "class": "graypy.GELFHTTPHandler",
+            "host": "10.0.0.21",
+            "port": "12201"
+        },
+        "access": {
+            "formatter": "access",
+            "class": "logging.FileHandler",
+            "filename": "log2.log"
+        }
+    },
+    "loggers": {
+        "uvicorn.error": {"handlers": ["default", "gelf"], "level": "INFO", "propagate": "False"},
+        "uvicorn.access": {"handlers": ["access", "gelf"], "level": "INFO", "propagate": "False"}
+    }
+}

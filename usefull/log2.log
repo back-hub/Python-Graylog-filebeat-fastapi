@@ -1,0 +1,1312 @@
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [15900] using statreload
+INFO:     Started server process [15903]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:43256 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43256 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43258 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15903]
+INFO:     Stopping reloader process [15900]
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [16313] using statreload
+INFO:     Started server process [16317]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     10.0.0.109:41314 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.109:41314 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     10.0.0.98:47874 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47882 - "GET /docs HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47882 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47904 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47908 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47908 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47908 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47908 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47908 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.0.98:47908 - "GET / HTTP/1.1" 200 OK
+WARNING:  StatReload detected file change in 'conf.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16317]
+INFO:     Started server process [16904]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16904]
+INFO:     Stopping reloader process [16313]
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [16935] using statreload
+INFO:     Started server process [16938]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2021-07-14 14:38:17,302 INFO:     127.0.0.1:43626 - "GET / HTTP/1.1" 200 OK
+WARNING:  StatReload detected file change in 'conf.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16938]
+INFO:     Started server process [16958]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2021-07-14 14:38:42,353 INFO:     127.0.0.1:43636 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16958]
+INFO:     Stopping reloader process [16935]
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [16973] using statreload
+INFO:     Started server process [16976]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2021-07-14 14:39:20,975 - INFO:     127.0.0.1:43646 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16976]
+INFO:     Stopping reloader process [16973]
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [16999] using statreload
+INFO:     Started server process [17002]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2021-07-14 14:40:04,889 :: INFO:     ip:127.0.0.1:43652 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17002]
+INFO:     Stopping reloader process [16999]
+2021-07-14 14:42:51,398 :: INFO:     ip:127.0.0.1:43698 - "GET /docs HTTP/1.1" 200 OK 127.0.0.1:43698 - "GET /docs HTTP/1.1" 200
+2021-07-14 14:42:51,632 :: INFO:     ip:127.0.0.1:43698 - "GET /openapi.json HTTP/1.1" 200 OK 127.0.0.1:43698 - "GET /openapi.json HTTP/1.1" 200
+2021-07-14 14:46:21,393 :: INFO:     ip:127.0.0.1:43776 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43776 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 14:47:04,881 :: INFO:     ip:127.0.0.1:43802 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43802 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 14:48:20,640 :: INFO:     ip:127.0.0.1:43836 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43836 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 14:48:25,141 :: INFO:     ip:127.0.0.1:43838 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43838 - "GET /1?str=1 HTTP/1.1" 500
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [17423] using statreload
+INFO:     Started server process [17426]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2021-07-14 14:50:16,793 :: INFO:     ip:127.0.0.1:43892 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43892 - "GET /1?str=1 HTTP/1.1" 500
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 14:50:28,446 :: INFO:     ip:127.0.0.1:43896 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43896 - "GET /1?str=1 HTTP/1.1" 500
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 14:50:43,164 :: INFO:     ip:127.0.0.1:43900 - "GET / HTTP/1.1" 200 OK 127.0.0.1:43900 - "GET / HTTP/1.1" 200
+2021-07-14 14:50:50,586 :: INFO:     ip:127.0.0.1:43902 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43902 - "GET /1?str=1 HTTP/1.1" 500
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17426]
+INFO:     Stopping reloader process [17423]
+2021-07-14 14:52:00,300 :: INFO:     ip:127.0.0.1:43950 - "GET / HTTP/1.1" 200 OK 127.0.0.1:43950 - "GET / HTTP/1.1" 200
+2021-07-14 14:52:05,873 :: INFO:     ip:127.0.0.1:43956 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43956 - "GET /1?str=1 HTTP/1.1" 500
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 14:52:48,660 :: INFO:     ip:127.0.0.1:43972 - "GET / HTTP/1.1" 200 OK 127.0.0.1:43972 - "GET / HTTP/1.1" 200
+2021-07-14 14:52:52,713 :: INFO:     ip:127.0.0.1:43972 - "GET /1?str=1 HTTP/1.1" 500 Internal Server Error 127.0.0.1:43972 - "GET /1?str=1 HTTP/1.1" 500
+ERROR:   
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 14:55:42,657 :: INFO ip:127.0.0.1:44014 - "GET / HTTP/1.1" 200 OK 127.0.0.1:44014 - "GET / HTTP/1.1" 200
+2021-07-14 14:56:19,952 | INFO | ip:127.0.0.1:44030 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:44030 - "GET / HTTP/1.1" 200
+2021-07-14 15:27:22,338 | INFO | ip:127.0.0.1:44472 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:44472 - "GET / HTTP/1.1" 200
+2021-07-14 15:27:43,413 | INFO | ip:127.0.0.1:44482 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:44482 - "GET / HTTP/1.1" 200
+2021-07-14 15:29:44,821 | INFO | ip:127.0.0.1:44508 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:44508 - "GET / HTTP/1.1" 200
+2021-07-14 15:33:03,695 | INFO | Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2021-07-14 15:33:03,696 | INFO | Started reloader process [18804] using statreload
+2021-07-14 15:33:03,869 | INFO | Started server process [18807]
+2021-07-14 15:33:03,871 | INFO | Waiting for application startup.
+2021-07-14 15:33:03,872 | INFO | Application startup complete.
+2021-07-14 15:35:15,852 | INFO | Shutting down
+2021-07-14 15:35:15,953 | INFO | Waiting for application shutdown.
+2021-07-14 15:35:15,956 | INFO | Application shutdown complete.
+2021-07-14 15:35:15,958 | INFO | Finished server process [18807]
+2021-07-14 15:35:16,008 | INFO | Stopping reloader process [18804]
+2021-07-14 15:35:27,300 | INFO | ip:127.0.0.1:44642 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:44642 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 15:36:07,956 | INFO | ip:127.0.0.1:44650 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:44650 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 15:38:41,068 | INFO | ip:127.0.0.1:44708 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:44708 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 15:39:10,450 | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 15:39:10,451 | INFO | Started reloader process [19033] using statreload
+2021-07-14 15:39:10,631 | INFO | Started server process [19036]
+2021-07-14 15:39:10,634 | INFO | Waiting for application startup.
+2021-07-14 15:39:10,635 | INFO | Application startup complete.
+2021-07-14 15:39:15,978 | INFO | ip:127.0.0.1:44734 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:44734 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 15:39:15,979 | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 15:40:07,690 | INFO | Shutting down
+2021-07-14 15:40:07,792 | INFO | Waiting for application shutdown.
+2021-07-14 15:40:07,795 | INFO | Application shutdown complete.
+2021-07-14 15:40:07,797 | INFO | Finished server process [19036]
+2021-07-14 15:40:07,852 | INFO | Stopping reloader process [19033]
+2021-07-14 15:40:09,196 | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 15:40:09,198 | INFO | Started reloader process [19069] using statreload
+2021-07-14 15:40:09,368 | INFO | Started server process [19072]
+2021-07-14 15:40:09,370 | INFO | Waiting for application startup.
+2021-07-14 15:40:09,371 | INFO | Application startup complete.
+2021-07-14 15:40:18,921 | INFO | ip:127.0.0.1:44782 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:44782 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 15:40:18,922 | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 32, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 15:41:05,717 | INFO | Shutting down
+2021-07-14 15:41:05,818 | INFO | Waiting for application shutdown.
+2021-07-14 15:41:05,821 | INFO | Application shutdown complete.
+2021-07-14 15:41:05,823 | INFO | Finished server process [19072]
+2021-07-14 15:41:05,880 | INFO | Stopping reloader process [19069]
+2021-07-14 15:41:07,581 | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 15:41:07,583 | INFO | Started reloader process [19143] using statreload
+2021-07-14 15:41:07,758 | INFO | Started server process [19146]
+2021-07-14 15:41:07,760 | INFO | Waiting for application startup.
+2021-07-14 15:41:07,761 | INFO | Application startup complete.
+2021-07-14 15:41:11,192 | INFO | ip:127.0.0.1:44830 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:44830 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 15:41:11,193 | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 35, in geterror
+    raise ex
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 33, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 15:43:12,770 | WARNING | StatReload detected file change in 'logger.py'. Reloading...
+2021-07-14 15:43:12,822 | INFO | Shutting down
+2021-07-14 15:43:12,925 | INFO | Waiting for application shutdown.
+2021-07-14 15:43:12,926 | INFO | Application shutdown complete.
+2021-07-14 15:43:12,927 | INFO | Finished server process [19146]
+2021-07-14 15:43:13,348 | INFO | Started server process [19225]
+2021-07-14 15:43:13,353 | INFO | Waiting for application startup.
+2021-07-14 15:43:13,354 | INFO | Application startup complete.
+2021-07-14 15:45:32,079 | INFO | Shutting down
+2021-07-14 15:45:32,182 | INFO | Waiting for application shutdown.
+2021-07-14 15:45:32,183 | INFO | Application shutdown complete.
+2021-07-14 15:45:32,184 | INFO | Finished server process [19225]
+2021-07-14 15:45:32,215 | INFO | Stopping reloader process [19143]
+2021-07-14 16:29:36,318 | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 16:29:36,320 | INFO | Started reloader process [21565] using statreload
+2021-07-14 16:29:36,501 | INFO | Started server process [21568]
+2021-07-14 16:29:36,504 | INFO | Waiting for application startup.
+2021-07-14 16:29:36,504 | INFO | Application startup complete.
+2021-07-14 16:29:39,206 | INFO | ip:127.0.0.1:45756 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:45756 - "GET / HTTP/1.1" 200
+2021-07-14 16:30:09,951 | INFO | Shutting down
+2021-07-14 16:30:10,053 | INFO | Waiting for application shutdown.
+2021-07-14 16:30:10,056 | INFO | Application shutdown complete.
+2021-07-14 16:30:10,064 | INFO | Finished server process [21568]
+2021-07-14 16:30:10,116 | INFO | Stopping reloader process [21565]
+2021-07-14 16:30:15,344 | INFO | ip:127.0.0.1:45774 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:45774 - "GET / HTTP/1.1" 200
+2021-07-14 16:30:22,470 | INFO | ip:127.0.0.1:45782 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:45782 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 16:30:33,219 | INFO | ip:127.0.0.1:45794 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:45794 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 16:30:45,447 | INFO | ip:127.0.0.1:45800 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:45800 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 16:31:01,988 | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 16:31:01,989 | INFO | Started reloader process [21704] using statreload
+2021-07-14 16:31:02,203 | INFO | Started server process [21707]
+2021-07-14 16:31:02,206 | INFO | Waiting for application startup.
+2021-07-14 16:31:02,206 | INFO | Application startup complete.
+2021-07-14 16:31:06,703 | INFO | ip:127.0.0.1:45822 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:45822 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 16:31:06,704 | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 81, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 77, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 19, in geterror
+    raise ex
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 17, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 16:33:24,050 | INFO | Shutting down
+2021-07-14 16:33:24,151 | INFO | Waiting for application shutdown.
+2021-07-14 16:33:24,154 | INFO | Application shutdown complete.
+2021-07-14 16:33:24,156 | INFO | Finished server process [21707]
+2021-07-14 16:33:24,215 | INFO | Stopping reloader process [21704]
+2021-07-14 16:33:37,070 | INFO | ip:127.0.0.1:45872 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:45872 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 16:33:37,073 | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 81, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 77, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 19, in geterror
+    raise ex
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 17, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 16:36:25,518 | uvicorn.access | INFO | ip:127.0.0.1:45900 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:45900 - "GET / HTTP/1.1" 200
+2021-07-14 16:36:54,456 | uvicorn.access | INFO | ip:127.0.0.1:45904 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:45904 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 16:36:54,457 | uvicorn.error | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 81, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 77, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 19, in geterror
+    raise ex
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 17, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 16:37:45,009 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 16:37:45,010 | uvicorn.error | INFO | Started reloader process [22129] using statreload
+2021-07-14 16:37:45,183 | uvicorn.error | INFO | Started server process [22132]
+2021-07-14 16:37:45,186 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 16:37:45,186 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 16:37:56,907 | uvicorn.access | INFO | ip:127.0.0.1:45942 - "GET / HTTP/1.1" | 200 OK | 127.0.0.1:45942 - "GET / HTTP/1.1" 200
+2021-07-14 16:44:05,726 | uvicorn.access | INFO | ip:127.0.0.1:46000 - "GET /1?str=1 HTTP/1.1" | 500 Internal Server Error | 127.0.0.1:46000 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-14 16:44:05,727 | uvicorn.error | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 19, in geterror
+    raise ex
+  File "/home/backhub/PycharmProjects/graylog_test/logger.py", line 17, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-14 16:45:13,277 | uvicorn.error | WARNING | StatReload detected file change in 'logger.py'. Reloading...
+2021-07-14 16:45:13,345 | uvicorn.error | INFO | Shutting down
+2021-07-14 16:45:13,448 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 16:45:13,450 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 16:45:13,451 | uvicorn.error | INFO | Finished server process [22132]
+2021-07-14 16:45:13,683 | uvicorn.error | INFO | Started server process [22367]
+2021-07-14 16:45:13,686 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 16:45:13,687 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 16:48:23,572 | uvicorn.error | WARNING | StatReload detected file change in 'conf.py'. Reloading...
+2021-07-14 16:48:23,656 | uvicorn.error | INFO | Shutting down
+2021-07-14 16:48:23,758 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 16:48:23,759 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 16:48:23,760 | uvicorn.error | INFO | Finished server process [22367]
+2021-07-14 16:48:39,211 | uvicorn.error | WARNING | StatReload detected file change in 'conf.py'. Reloading...
+2021-07-14 16:48:39,401 | uvicorn.error | INFO | Started server process [22487]
+2021-07-14 16:48:39,404 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 16:48:39,405 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 16:52:18,333 | uvicorn.error | ERROR | [Errno 98] Address already in use
+2021-07-14 16:52:24,257 | uvicorn.error | ERROR | [Errno 98] Address already in use
+2021-07-14 16:52:31,729 | uvicorn.error | ERROR | [Errno 98] Address already in use
+2021-07-14 16:52:37,185 | uvicorn.error | INFO | Shutting down
+2021-07-14 16:52:37,288 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 16:52:37,290 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 16:52:37,292 | uvicorn.error | INFO | Finished server process [22487]
+2021-07-14 16:52:37,347 | uvicorn.error | INFO | Stopping reloader process [22129]
+2021-07-14 16:52:39,058 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 16:52:39,059 | uvicorn.error | INFO | Started reloader process [[36m[1m22650[0m] using [36m[1mstatreload[0m
+2021-07-14 16:52:39,228 | uvicorn.error | INFO | Started server process [[36m22652[0m]
+2021-07-14 16:52:39,230 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 16:52:39,231 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 16:53:13,293 | uvicorn.access | INFO | ip:127.0.0.1:46174 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:46174 - "GET / HTTP/1.1" 200
+2021-07-14 16:53:13,293 | uvicorn.access | INFO | 127.0.0.1:46174 - "GET / HTTP/1.1" 200
+2021-07-14 16:55:34,064 | uvicorn.error | INFO | Shutting down
+2021-07-14 16:55:34,167 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 16:55:34,169 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 16:55:34,171 | uvicorn.error | INFO | Finished server process [[36m22652[0m]
+2021-07-14 16:55:34,223 | uvicorn.error | INFO | Stopping reloader process [[36m[1m22650[0m]
+2021-07-14 16:55:35,302 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 16:55:35,304 | uvicorn.error | INFO | Started reloader process [[36m[1m23325[0m] using [36m[1mstatreload[0m
+2021-07-14 16:55:35,472 | uvicorn.error | INFO | Started server process [[36m23327[0m]
+2021-07-14 16:55:35,474 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 16:55:35,475 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:05:43,154 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:05:43,256 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:05:43,258 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:05:43,259 | uvicorn.error | INFO | Finished server process [[36m23327[0m]
+2021-07-14 17:05:43,311 | uvicorn.error | INFO | Stopping reloader process [[36m[1m23325[0m]
+2021-07-14 17:06:32,865 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:06:32,866 | uvicorn.error | INFO | Started reloader process [[36m[1m23820[0m] using [36m[1mstatreload[0m
+2021-07-14 17:06:33,070 | uvicorn.error | INFO | Started server process [[36m23822[0m]
+2021-07-14 17:06:33,073 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:06:33,074 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:06:41,645 | uvicorn.access | INFO | ip:127.0.0.1:47020 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47020 - "GET / HTTP/1.1" 200
+2021-07-14 17:06:41,645 | uvicorn.access | INFO | 127.0.0.1:47020 - "GET / HTTP/1.1" 200
+2021-07-14 17:06:53,065 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:06:53,169 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:06:53,172 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:06:53,173 | uvicorn.error | INFO | Finished server process [[36m23822[0m]
+2021-07-14 17:06:53,231 | uvicorn.error | INFO | Stopping reloader process [[36m[1m23820[0m]
+2021-07-14 17:06:58,474 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:06:58,476 | uvicorn.error | INFO | Started reloader process [[36m[1m23860[0m] using [36m[1mstatreload[0m
+2021-07-14 17:06:58,647 | uvicorn.error | INFO | Started server process [[36m23862[0m]
+2021-07-14 17:06:58,650 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:06:58,650 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:07:01,059 | uvicorn.access | INFO | ip:127.0.0.1:47046 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47046 - "GET / HTTP/1.1" 200
+2021-07-14 17:07:01,059 | uvicorn.access | INFO | 127.0.0.1:47046 - "GET / HTTP/1.1" 200
+2021-07-14 17:07:05,482 | uvicorn.access | INFO | ip:127.0.0.1:47046 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47046 - "GET / HTTP/1.1" 200
+2021-07-14 17:07:05,482 | uvicorn.access | INFO | 127.0.0.1:47046 - "GET / HTTP/1.1" 200
+2021-07-14 17:07:10,301 | uvicorn.access | INFO | ip:127.0.0.1:47046 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47046 - "GET / HTTP/1.1" 200
+2021-07-14 17:07:10,301 | uvicorn.access | INFO | 127.0.0.1:47046 - "GET / HTTP/1.1" 200
+2021-07-14 17:13:04,400 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:13:04,503 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:13:04,506 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:13:04,508 | uvicorn.error | INFO | Finished server process [[36m23862[0m]
+2021-07-14 17:13:04,551 | uvicorn.error | INFO | Stopping reloader process [[36m[1m23860[0m]
+2021-07-14 17:13:10,967 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:13:10,969 | uvicorn.error | INFO | Started reloader process [[36m[1m24549[0m] using [36m[1mstatreload[0m
+2021-07-14 17:13:11,139 | uvicorn.error | INFO | Started server process [[36m24551[0m]
+2021-07-14 17:13:11,142 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:13:11,143 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:13:18,960 | uvicorn.access | INFO | ip:127.0.0.1:47528 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47528 - "GET / HTTP/1.1" 200
+2021-07-14 17:13:18,960 | uvicorn.access | INFO | 127.0.0.1:47528 - "GET / HTTP/1.1" 200
+2021-07-14 17:13:54,337 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:13:54,440 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:13:54,443 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:13:54,445 | uvicorn.error | INFO | Finished server process [[36m24551[0m]
+2021-07-14 17:13:54,503 | uvicorn.error | INFO | Stopping reloader process [[36m[1m24549[0m]
+2021-07-14 17:14:48,665 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:14:48,667 | uvicorn.error | INFO | Started reloader process [[36m[1m24614[0m] using [36m[1mstatreload[0m
+2021-07-14 17:14:48,833 | uvicorn.error | INFO | Started server process [[36m24616[0m]
+2021-07-14 17:14:48,836 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:14:48,836 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:14:54,950 | uvicorn.access | INFO | ip:127.0.0.1:47556 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47556 - "GET / HTTP/1.1" 200
+2021-07-14 17:14:54,950 | uvicorn.access | INFO | 127.0.0.1:47556 - "GET / HTTP/1.1" 200
+2021-07-14 17:15:01,314 | uvicorn.access | INFO | ip:127.0.0.1:47562 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47562 - "GET / HTTP/1.1" 200
+2021-07-14 17:15:01,314 | uvicorn.access | INFO | 127.0.0.1:47562 - "GET / HTTP/1.1" 200
+2021-07-14 17:15:30,835 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:15:30,938 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:15:30,940 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:15:30,942 | uvicorn.error | INFO | Finished server process [[36m24616[0m]
+2021-07-14 17:15:30,997 | uvicorn.error | INFO | Stopping reloader process [[36m[1m24614[0m]
+2021-07-14 17:15:32,233 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:15:32,235 | uvicorn.error | INFO | Started reloader process [[36m[1m24676[0m] using [36m[1mstatreload[0m
+2021-07-14 17:15:32,400 | uvicorn.error | INFO | Started server process [[36m24678[0m]
+2021-07-14 17:15:32,403 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:15:32,403 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:15:38,591 | uvicorn.access | INFO | ip:127.0.0.1:47590 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47590 - "GET / HTTP/1.1" 200
+2021-07-14 17:15:38,591 | uvicorn.access | INFO | 127.0.0.1:47590 - "GET / HTTP/1.1" 200
+2021-07-14 17:15:41,952 | uvicorn.access | INFO | ip:127.0.0.1:47590 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47590 - "GET / HTTP/1.1" 200
+2021-07-14 17:15:41,952 | uvicorn.access | INFO | 127.0.0.1:47590 - "GET / HTTP/1.1" 200
+2021-07-14 17:15:50,891 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:15:50,992 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:15:50,996 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:15:50,999 | uvicorn.error | INFO | Finished server process [[36m24678[0m]
+2021-07-14 17:15:51,057 | uvicorn.error | INFO | Stopping reloader process [[36m[1m24676[0m]
+2021-07-14 17:16:00,823 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:16:00,824 | uvicorn.error | INFO | Started reloader process [[36m[1m24736[0m] using [36m[1mstatreload[0m
+2021-07-14 17:16:00,987 | uvicorn.error | INFO | Started server process [[36m24738[0m]
+2021-07-14 17:16:00,989 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:16:00,990 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:16:05,362 | uvicorn.access | INFO | ip:127.0.0.1:47620 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47620 - "GET / HTTP/1.1" 200
+2021-07-14 17:16:05,362 | uvicorn.access | INFO | 127.0.0.1:47620 - "GET / HTTP/1.1" 200
+2021-07-14 17:16:10,159 | uvicorn.access | INFO | ip:127.0.0.1:47620 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47620 - "GET / HTTP/1.1" 200
+2021-07-14 17:16:10,159 | uvicorn.access | INFO | 127.0.0.1:47620 - "GET / HTTP/1.1" 200
+2021-07-14 17:18:08,981 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:18:09,082 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:18:09,085 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:18:09,088 | uvicorn.error | INFO | Finished server process [[36m24738[0m]
+2021-07-14 17:18:09,138 | uvicorn.error | INFO | Stopping reloader process [[36m[1m24736[0m]
+2021-07-14 17:18:10,119 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:18:10,121 | uvicorn.error | INFO | Started reloader process [[36m[1m24794[0m] using [36m[1mstatreload[0m
+2021-07-14 17:18:10,286 | uvicorn.error | INFO | Started server process [[36m24796[0m]
+2021-07-14 17:18:10,289 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:18:10,290 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:18:17,007 | uvicorn.access | INFO | ip:127.0.0.1:47670 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47670 - "GET / HTTP/1.1" 200
+2021-07-14 17:18:17,007 | uvicorn.access | INFO | 127.0.0.1:47670 - "GET / HTTP/1.1" 200
+2021-07-14 17:18:50,780 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:18:50,883 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:18:50,886 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:18:50,888 | uvicorn.error | INFO | Finished server process [[36m24796[0m]
+2021-07-14 17:18:50,943 | uvicorn.error | INFO | Stopping reloader process [[36m[1m24794[0m]
+2021-07-14 17:18:53,758 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:18:53,759 | uvicorn.error | INFO | Started reloader process [[36m[1m24813[0m] using [36m[1mstatreload[0m
+2021-07-14 17:18:53,926 | uvicorn.error | INFO | Started server process [[36m24815[0m]
+2021-07-14 17:18:53,929 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:18:53,929 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:18:57,176 | uvicorn.access | INFO | 127.0.0.1:47698 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47698 - "GET / HTTP/1.1" 200
+2021-07-14 17:18:57,176 | uvicorn.access | INFO | 127.0.0.1:47698 - "GET / HTTP/1.1" 200
+2021-07-14 17:19:02,953 | uvicorn.access | INFO | 127.0.0.1:47704 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47704 - "GET / HTTP/1.1" 200
+2021-07-14 17:19:02,953 | uvicorn.access | INFO | 127.0.0.1:47704 - "GET / HTTP/1.1" 200
+2021-07-14 17:24:08,916 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:24:09,019 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:24:09,022 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:24:09,024 | uvicorn.error | INFO | Finished server process [[36m24815[0m]
+2021-07-14 17:24:09,081 | uvicorn.error | INFO | Stopping reloader process [[36m[1m24813[0m]
+2021-07-14 17:24:13,964 | uvicorn.error | INFO | Uvicorn running on [1mhttp://127.0.0.1:8000[0m (Press CTRL+C to quit)
+2021-07-14 17:24:13,966 | uvicorn.error | INFO | Started reloader process [[36m[1m24978[0m] using [36m[1mstatreload[0m
+2021-07-14 17:24:14,133 | uvicorn.error | INFO | Started server process [[36m24980[0m]
+2021-07-14 17:24:14,136 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 17:24:14,136 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 17:24:25,318 | uvicorn.access | INFO | 127.0.0.1:47778 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:47778 - "GET / HTTP/1.1" 200
+2021-07-14 17:24:25,318 | uvicorn.access | INFO | 127.0.0.1:47778 - "GET / HTTP/1.1" 200
+2021-07-14 17:24:44,570 | uvicorn.error | INFO | Shutting down
+2021-07-14 17:24:44,673 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 17:24:44,675 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 17:24:44,677 | uvicorn.error | INFO | Finished server process [[36m24980[0m]
+2021-07-14 17:24:44,731 | uvicorn.error | INFO | Stopping reloader process [[36m[1m24978[0m]
+2021-07-14 19:11:23,519 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 19:11:23,520 | uvicorn.error | INFO | Started reloader process [28545] using statreload
+2021-07-14 19:11:23,689 | uvicorn.error | INFO | Started server process [28547]
+2021-07-14 19:11:23,691 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 19:11:23,692 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 19:11:33,392 | uvicorn.access | INFO | 127.0.0.1:49556 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:49556 - "GET / HTTP/1.1" 200
+2021-07-14 19:11:33,392 | uvicorn.access | INFO | 127.0.0.1:49556 - "GET / HTTP/1.1" 200
+2021-07-14 19:11:40,156 | uvicorn.access | INFO | 127.0.0.1:49562 - '[1mGET / HTTP/1.1[0m' | [32m200 OK[0m | 127.0.0.1:49562 - "GET / HTTP/1.1" 200
+2021-07-14 19:11:40,156 | uvicorn.access | INFO | 127.0.0.1:49562 - "GET / HTTP/1.1" 200
+2021-07-14 19:11:59,662 | uvicorn.error | INFO | Shutting down
+2021-07-14 19:11:59,766 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 19:11:59,769 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 19:11:59,771 | uvicorn.error | INFO | Finished server process [28547]
+2021-07-14 19:11:59,827 | uvicorn.error | INFO | Stopping reloader process [28545]
+2021-07-14 19:12:01,015 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 19:12:01,017 | uvicorn.error | INFO | Started reloader process [28582] using statreload
+2021-07-14 19:12:01,182 | uvicorn.error | INFO | Started server process [28584]
+2021-07-14 19:12:01,184 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 19:12:01,185 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 19:12:05,516 | uvicorn.access | INFO | 127.0.0.1:49592 - "GET / HTTP/1.1" 200
+2021-07-14 19:12:10,443 | uvicorn.access | INFO | 127.0.0.1:49592 - "GET / HTTP/1.1" 200
+2021-07-14 19:13:04,891 | uvicorn.access | INFO | 127.0.0.1:49622 - "GET / HTTP/1.1" 200
+2021-07-14 19:13:07,291 | uvicorn.error | INFO | Shutting down
+2021-07-14 19:13:07,393 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-14 19:13:07,396 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-14 19:13:07,398 | uvicorn.error | INFO | Finished server process [28584]
+2021-07-14 19:13:07,453 | uvicorn.error | INFO | Stopping reloader process [28582]
+2021-07-14 19:13:08,550 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-14 19:13:08,551 | uvicorn.error | INFO | Started reloader process [28628] using statreload
+2021-07-14 19:13:08,718 | uvicorn.error | INFO | Started server process [28630]
+2021-07-14 19:13:08,720 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-14 19:13:08,721 | uvicorn.error | INFO | Application startup complete.
+2021-07-14 19:13:14,012 | uvicorn.access | INFO | 127.0.0.1:49648 - "GET / HTTP/1.1" 200
+2021-07-14 19:13:40,487 | uvicorn.access | INFO | 127.0.0.1:49654 - "GET / HTTP/1.1" 200
+2021-07-15 10:31:27,176 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:31:47,421 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:32:28,993 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:35:26,927 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:37:51,704 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:37:51,706 | uvicorn.error | INFO | Started reloader process [7130] using statreload
+2021-07-15 10:37:51,930 | uvicorn.error | INFO | Started server process [7133]
+2021-07-15 10:37:51,934 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:37:51,934 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:38:55,296 | uvicorn.access | INFO | 127.0.0.1:41420 - "GET / HTTP/1.1" 200
+2021-07-15 10:38:55,451 | uvicorn.access | INFO | 127.0.0.1:41420 - "GET /favicon.ico HTTP/1.1" 404
+2021-07-15 10:40:00,788 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:40:00,891 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:40:00,894 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:40:00,896 | uvicorn.error | INFO | Finished server process [7133]
+2021-07-15 10:40:00,955 | uvicorn.error | INFO | Stopping reloader process [7130]
+2021-07-15 10:40:01,868 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:40:01,870 | uvicorn.error | INFO | Started reloader process [7327] using statreload
+2021-07-15 10:40:17,734 | uvicorn.error | WARNING | StatReload detected file change in 'logger.py'. Reloading...
+2021-07-15 10:40:17,929 | uvicorn.error | INFO | Started server process [7349]
+2021-07-15 10:40:17,932 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:40:17,933 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:40:18,538 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:40:18,640 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:40:18,643 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:40:18,645 | uvicorn.error | INFO | Finished server process [7349]
+2021-07-15 10:40:18,701 | uvicorn.error | INFO | Stopping reloader process [7327]
+2021-07-15 10:40:19,920 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:40:19,922 | uvicorn.error | INFO | Started reloader process [7351] using statreload
+2021-07-15 10:40:20,094 | uvicorn.error | INFO | Started server process [7353]
+2021-07-15 10:40:20,096 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:40:20,097 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:40:28,891 | uvicorn.access | INFO | 127.0.0.1:41476 - "GET /%D0%B2%D1%89%D1%81%D1%8B HTTP/1.1" 404
+2021-07-15 10:43:52,034 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:43:52,136 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:43:52,139 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:43:52,141 | uvicorn.error | INFO | Finished server process [7353]
+2021-07-15 10:43:52,195 | uvicorn.error | INFO | Stopping reloader process [7351]
+2021-07-15 10:46:04,434 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:46:04,436 | uvicorn.error | INFO | Started reloader process [7701] using statreload
+2021-07-15 10:46:04,605 | uvicorn.error | INFO | Started server process [7703]
+2021-07-15 10:46:04,608 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:46:04,609 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:46:17,176 | uvicorn.access | INFO | 127.0.0.1:41536 - "GET /docs HTTP/1.1" 200
+2021-07-15 10:46:22,209 | uvicorn.access | INFO | 127.0.0.1:41538 - "GET /openapi.json HTTP/1.1" 200
+2021-07-15 10:48:33,684 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:48:33,787 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:48:33,790 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:48:33,792 | uvicorn.error | INFO | Finished server process [7703]
+2021-07-15 10:48:33,841 | uvicorn.error | INFO | Stopping reloader process [7701]
+2021-07-15 10:48:34,838 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:48:34,839 | uvicorn.error | INFO | Started reloader process [7792] using statreload
+2021-07-15 10:48:35,009 | uvicorn.error | INFO | Started server process [7794]
+2021-07-15 10:48:35,012 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:48:35,012 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:48:47,864 | uvicorn.access | INFO | 127.0.0.1:41592 - "GET /docs HTTP/1.1" 200
+2021-07-15 10:48:48,073 | uvicorn.access | INFO | 127.0.0.1:41592 - "GET /openapi.json HTTP/1.1" 200
+2021-07-15 10:49:16,806 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:49:16,909 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:49:16,912 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:49:16,914 | uvicorn.error | INFO | Finished server process [7794]
+2021-07-15 10:49:16,970 | uvicorn.error | INFO | Stopping reloader process [7792]
+2021-07-15 10:49:17,841 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:49:17,843 | uvicorn.error | INFO | Started reloader process [7842] using statreload
+2021-07-15 10:49:18,012 | uvicorn.error | INFO | Started server process [7844]
+2021-07-15 10:49:18,014 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:49:18,015 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:49:20,284 | uvicorn.access | INFO  | 127.0.0.1:41636 - "GET /docs HTTP/1.1" 200
+2021-07-15 10:49:20,284 | uvicorn.access | INFO | 127.0.0.1:41636 - "GET /docs HTTP/1.1" 200
+2021-07-15 10:49:20,423 | uvicorn.access | INFO  | 127.0.0.1:41636 - "GET /openapi.json HTTP/1.1" 200
+2021-07-15 10:49:20,423 | uvicorn.access | INFO | 127.0.0.1:41636 - "GET /openapi.json HTTP/1.1" 200
+2021-07-15 10:49:31,436 | uvicorn.access | INFO  | 127.0.0.1:41638 - "GET / HTTP/1.1" 200
+2021-07-15 10:49:31,436 | uvicorn.access | INFO | 127.0.0.1:41638 - "GET / HTTP/1.1" 200
+2021-07-15 10:49:40,467 | uvicorn.access | INFO  | 127.0.0.1:41652 - "GET / HTTP/1.1" 200
+2021-07-15 10:49:40,467 | uvicorn.access | INFO | 127.0.0.1:41652 - "GET / HTTP/1.1" 200
+2021-07-15 10:51:40,070 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:51:40,172 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:51:40,175 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:51:40,176 | uvicorn.error | INFO | Finished server process [7844]
+2021-07-15 10:51:40,228 | uvicorn.error | INFO | Stopping reloader process [7842]
+2021-07-15 10:51:41,182 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:51:41,183 | uvicorn.error | INFO | Started reloader process [7935] using statreload
+2021-07-15 10:51:41,352 | uvicorn.error | INFO | Started server process [7937]
+2021-07-15 10:51:41,355 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:51:41,355 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:51:58,512 | uvicorn.access | INFO  | 127.0.0.1:41708 - "GET / HTTP/1.1" 200
+2021-07-15 10:51:58,512 | uvicorn.access | INFO | 127.0.0.1:41708 - "GET / HTTP/1.1" 200
+2021-07-15 10:52:38,911 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:52:39,013 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:52:39,016 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:52:39,018 | uvicorn.error | INFO | Finished server process [7937]
+2021-07-15 10:52:39,070 | uvicorn.error | INFO | Stopping reloader process [7935]
+2021-07-15 10:52:39,593 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:52:39,594 | uvicorn.error | INFO | Started reloader process [7961] using statreload
+2021-07-15 10:52:39,767 | uvicorn.error | INFO | Started server process [7963]
+2021-07-15 10:52:39,770 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:52:39,770 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:53:14,153 | uvicorn.access | INFO | 127.0.0.1:41746 - "GET / HTTP/1.1" 200
+2021-07-15 10:53:14,153 | uvicorn.access | INFO | 127.0.0.1:41746 - "GET / HTTP/1.1" 200
+2021-07-15 10:53:26,683 | uvicorn.access | INFO | 127.0.0.1:41752 - "GET / HTTP/1.1" 200
+2021-07-15 10:53:26,683 | uvicorn.access | INFO | 127.0.0.1:41752 - "GET / HTTP/1.1" 200
+2021-07-15 10:53:28,892 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:53:28,995 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:53:28,998 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:53:29,000 | uvicorn.error | INFO | Finished server process [7963]
+2021-07-15 10:53:29,055 | uvicorn.error | INFO | Stopping reloader process [7961]
+2021-07-15 10:53:29,851 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:53:29,852 | uvicorn.error | INFO | Started reloader process [7993] using statreload
+2021-07-15 10:53:30,020 | uvicorn.error | INFO | Started server process [7995]
+2021-07-15 10:53:30,022 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:53:30,023 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:53:31,906 | uvicorn.access | INFO  - | 127.0.0.1:41778 - "GET / HTTP/1.1" 200
+2021-07-15 10:53:31,906 | uvicorn.access | INFO | 127.0.0.1:41778 - "GET / HTTP/1.1" 200
+2021-07-15 10:54:26,180 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:54:26,283 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:54:26,286 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:54:26,291 | uvicorn.error | INFO | Finished server process [7995]
+2021-07-15 10:54:26,346 | uvicorn.error | INFO | Stopping reloader process [7993]
+2021-07-15 10:54:27,277 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:54:27,279 | uvicorn.error | INFO | Started reloader process [8012] using statreload
+2021-07-15 10:54:27,444 | uvicorn.error | INFO | Started server process [8014]
+2021-07-15 10:54:27,447 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:54:27,448 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:54:37,069 | uvicorn.access | INFO  - | 127.0.0.1:41812 - "GET / HTTP/1.1" 200
+2021-07-15 10:54:37,069 | uvicorn.access | INFO | 127.0.0.1:41812 - "GET / HTTP/1.1" 200
+2021-07-15 10:54:53,364 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:54:53,467 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:54:53,468 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:54:53,468 | uvicorn.error | INFO | Finished server process [8014]
+2021-07-15 10:54:53,501 | uvicorn.error | INFO | Stopping reloader process [8012]
+2021-07-15 10:55:02,818 | uvicorn.access | INFO  - | 127.0.0.1:41836 - "GET / HTTP/1.1" 200
+2021-07-15 10:55:36,709 | uvicorn.access | INFO  - | 127.0.0.1:41842 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-15 10:56:16,777 | uvicorn.access | INFO  - | 127.0.0.1:41856 - "GET / HTTP/1.1" 200
+2021-07-15 10:56:16,777 | uvicorn.access | INFO | 127.0.0.1:41856 - "GET / HTTP/1.1" 200
+2021-07-15 10:56:21,905 | uvicorn.access | INFO  - | 127.0.0.1:41862 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-15 10:56:21,905 | uvicorn.access | INFO | 127.0.0.1:41862 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-15 10:56:21,907 | uvicorn.error | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 81, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/message_logger.py", line 77, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/./logger.py", line 15, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-15 10:57:23,933 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:57:23,935 | uvicorn.error | INFO | Started reloader process [8181] using statreload
+2021-07-15 10:57:24,105 | uvicorn.error | INFO | Started server process [8183]
+2021-07-15 10:57:24,107 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:57:24,108 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:57:41,279 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:57:41,382 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:57:41,385 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:57:41,387 | uvicorn.error | INFO | Finished server process [8183]
+2021-07-15 10:57:41,433 | uvicorn.error | INFO | Stopping reloader process [8181]
+2021-07-15 10:57:42,366 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:57:42,368 | uvicorn.error | INFO | Started reloader process [8186] using statreload
+2021-07-15 10:57:42,539 | uvicorn.error | INFO | Started server process [8188]
+2021-07-15 10:57:42,542 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:57:42,543 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:57:56,892 | uvicorn.access | INFO  - | 127.0.0.1:41936 - "GET / HTTP/1.1" 200
+2021-07-15 10:57:56,892 | uvicorn.access | INFO | 127.0.0.1:41936 - "GET / HTTP/1.1" 200
+2021-07-15 10:58:30,053 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:58:30,156 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:58:30,158 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:58:30,160 | uvicorn.error | INFO | Finished server process [8188]
+2021-07-15 10:58:30,212 | uvicorn.error | INFO | Stopping reloader process [8186]
+2021-07-15 10:58:30,820 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 10:58:30,822 | uvicorn.error | INFO | Started reloader process [8229] using statreload
+2021-07-15 10:58:30,988 | uvicorn.error | INFO | Started server process [8231]
+2021-07-15 10:58:30,991 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 10:58:30,992 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 10:58:36,953 | uvicorn.access | INFO | 127.0.0.1:41964 - "GET / HTTP/1.1" 200
+2021-07-15 10:58:44,152 | uvicorn.error | INFO | Shutting down
+2021-07-15 10:58:44,253 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 10:58:44,256 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 10:58:44,258 | uvicorn.error | INFO | Finished server process [8231]
+2021-07-15 10:58:44,317 | uvicorn.error | INFO | Stopping reloader process [8229]
+2021-07-15 10:59:18,950 | uvicorn.access | INFO  - | 127.0.0.1:41988 - "GET / HTTP/1.1" 200
+2021-07-15 10:59:37,376 | uvicorn.access | INFO | 127.0.0.1:41992 - "GET / HTTP/1.1" 200
+2021-07-15 11:00:08,980 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 11:00:08,981 | uvicorn.error | INFO | Started reloader process [8281] using statreload
+2021-07-15 11:00:09,150 | uvicorn.error | INFO | Started server process [8283]
+2021-07-15 11:00:09,153 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 11:00:09,154 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 11:01:07,316 | uvicorn.error | INFO | Shutting down
+2021-07-15 11:01:07,419 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 11:01:07,421 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 11:01:07,422 | uvicorn.error | INFO | Finished server process [8283]
+2021-07-15 11:01:07,474 | uvicorn.error | INFO | Stopping reloader process [8281]
+2021-07-15 11:01:08,221 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 11:01:08,222 | uvicorn.error | INFO | Started reloader process [8337] using statreload
+2021-07-15 11:01:08,395 | uvicorn.error | INFO | Started server process [8339]
+2021-07-15 11:01:08,398 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 11:01:08,399 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 11:02:44,521 | uvicorn.error | INFO | Shutting down
+2021-07-15 11:02:44,623 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 11:02:44,624 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 11:02:44,625 | uvicorn.error | INFO | Finished server process [8339]
+2021-07-15 11:02:44,662 | uvicorn.error | INFO | Stopping reloader process [8337]
+2021-07-15 11:02:45,652 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 11:02:45,654 | uvicorn.error | INFO | Started reloader process [8358] using statreload
+2021-07-15 11:02:45,832 | uvicorn.error | INFO | Started server process [8360]
+2021-07-15 11:02:45,834 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 11:02:45,835 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 11:02:48,981 | uvicorn.access | INFO  - | 127.0.0.1:42080 - "GET / HTTP/1.1" 200
+2021-07-15 11:02:48,981 | uvicorn.access | INFO | 127.0.0.1:42080 - "GET / HTTP/1.1" 200
+2021-07-15 11:03:02,510 | uvicorn.error | INFO | Shutting down
+2021-07-15 11:03:02,613 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 11:03:02,616 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 11:03:02,618 | uvicorn.error | INFO | Finished server process [8360]
+2021-07-15 11:03:02,671 | uvicorn.error | INFO | Stopping reloader process [8358]
+2021-07-15 11:03:03,507 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 11:03:03,508 | uvicorn.error | INFO | Started reloader process [8375] using statreload
+2021-07-15 11:03:03,681 | uvicorn.error | INFO | Started server process [8377]
+2021-07-15 11:03:03,683 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 11:03:03,684 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 11:03:08,572 | uvicorn.access | INFO  - | 127.0.0.1:42114 - "GET / HTTP/1.1" 200
+2021-07-15 11:03:15,335 | uvicorn.error | INFO | Shutting down
+2021-07-15 11:03:15,437 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 11:03:15,440 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 11:03:15,442 | uvicorn.error | INFO | Finished server process [8377]
+2021-07-15 11:03:15,497 | uvicorn.error | INFO | Stopping reloader process [8375]
+2021-07-15 11:03:19,953 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 11:03:19,954 | uvicorn.error | INFO | Started reloader process [8384] using statreload
+2021-07-15 11:03:20,122 | uvicorn.error | INFO | Started server process [8386]
+2021-07-15 11:03:20,125 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 11:03:20,126 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 11:03:27,533 | uvicorn.access | INFO  - | 127.0.0.1:42138 - "GET / HTTP/1.1" 200
+2021-07-15 11:03:39,298 | uvicorn.access | INFO  - | 127.0.0.1:42142 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-15 11:03:39,299 | uvicorn.error | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/./logger.py", line 15, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-15 11:03:51,580 | uvicorn.access | INFO  - | 127.0.0.1:42148 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-15 11:03:51,582 | uvicorn.error | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/./logger.py", line 15, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-15 11:04:01,114 | uvicorn.access | INFO  - | 127.0.0.1:42162 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-15 11:04:01,115 | uvicorn.error | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/./logger.py", line 15, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-15 11:04:21,589 | uvicorn.error | INFO | Shutting down
+2021-07-15 11:04:21,690 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 11:04:21,691 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 11:04:21,693 | uvicorn.error | INFO | Finished server process [8386]
+2021-07-15 11:04:21,725 | uvicorn.error | INFO | Stopping reloader process [8384]
+2021-07-15 11:04:22,425 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 11:04:22,426 | uvicorn.error | INFO | Started reloader process [8428] using statreload
+2021-07-15 11:04:22,599 | uvicorn.error | INFO | Started server process [8430]
+2021-07-15 11:04:22,602 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 11:04:22,603 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 11:04:26,336 | uvicorn.access | INFO | 127.0.0.1:42188 - "GET / HTTP/1.1" 200
+2021-07-15 11:05:12,025 | uvicorn.error | INFO | Shutting down
+2021-07-15 11:05:12,128 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 11:05:12,131 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 11:05:12,133 | uvicorn.error | INFO | Finished server process [8430]
+2021-07-15 11:05:12,190 | uvicorn.error | INFO | Stopping reloader process [8428]
+2021-07-15 11:06:51,142 | uvicorn.error | INFO | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2021-07-15 11:06:51,144 | uvicorn.error | INFO | Started reloader process [8559] using statreload
+2021-07-15 11:06:51,314 | uvicorn.error | INFO | Started server process [8561]
+2021-07-15 11:06:51,317 | uvicorn.error | INFO | Waiting for application startup.
+2021-07-15 11:06:51,317 | uvicorn.error | INFO | Application startup complete.
+2021-07-15 11:07:01,495 | uvicorn.access | INFO | 127.0.0.1:42242 - "GET / HTTP/1.1" 200
+2021-07-15 11:07:06,916 | uvicorn.access | INFO | 127.0.0.1:42246 - "GET /1?str=1 HTTP/1.1" 500
+2021-07-15 11:07:06,917 | uvicorn.error | ERROR | Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/routing.py", line 52, in app
+    response = await func(request)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 214, in app
+    raw_response = await run_endpoint_function(
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/fastapi/routing.py", line 151, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/backhub/PycharmProjects/graylog_test/venv/lib/python3.8/site-packages/starlette/concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/backhub/PycharmProjects/graylog_test/./logger.py", line 15, in geterror
+    int(str)/0
+ZeroDivisionError: division by zero
+2021-07-15 11:07:14,524 | uvicorn.error | INFO | Shutting down
+2021-07-15 11:07:14,627 | uvicorn.error | INFO | Waiting for application shutdown.
+2021-07-15 11:07:14,629 | uvicorn.error | INFO | Application shutdown complete.
+2021-07-15 11:07:14,631 | uvicorn.error | INFO | Finished server process [8561]
+2021-07-15 11:07:14,685 | uvicorn.error | INFO | Stopping reloader process [8559]

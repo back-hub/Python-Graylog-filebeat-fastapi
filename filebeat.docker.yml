@@ -1,0 +1,9 @@
+filebeat.inputs:
+- type: log
+  # Определяем путь к лог-файлам
+  paths:
+    - /var/app/log/*.log
+
+# Пока будем выводить лог-сообщения в консоль
+output.logstash:
+  hosts: ["10.0.0.21:5044"]
